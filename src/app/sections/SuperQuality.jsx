@@ -1,5 +1,6 @@
-import { shoe8 } from "../assets/images";
-import { Button } from "../[lang]/components";
+import Button from "../[lang]/components/button";
+
+import Image from "next/image";
 
 const SuperQuality = () => {
   return (
@@ -27,8 +28,8 @@ const SuperQuality = () => {
       </div>
 
       <div className="flex-1 flex justify-center items-center">
-        <img
-          src={shoe8}
+        <Image
+          src={"/shoe8.svg"}
           alt="product detail"
           width={570}
           height={522}

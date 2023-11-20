@@ -16,6 +16,7 @@ import {
   shoe5,
   shoe6,
   shoe7,
+  cal1,
   thumbnailShoe1,
   thumbnailShoe2,
   thumbnailShoe3,
@@ -63,6 +64,26 @@ export const products = [
   {
     imgURL: shoe6,
     name: "Nike Air Jordan-100",
+    price: "$220.20",
+  },
+  {
+    imgURL: shoe7,
+    name: "Nike Air Jordan-001",
+    price: "$230.20",
+  },
+  {
+    imgURL: shoe4,
+    name: "21950 TIMBER CRO BROWN ",
+    price: "$200.20",
+  },
+  {
+    imgURL: shoe5,
+    name: "Nike Air Jordan-10",
+    price: "$210.20",
+  },
+  {
+    imgURL: shoe6,
+    name: "21950 TIMBER CRO BROWN ",
     price: "$220.20",
   },
   {
@@ -133,7 +154,7 @@ export const footerLinks = [
   {
     title: "Get in touch",
     links: [
-      { name: "customer@nike.com", link: "mailto:customer@confi.com" },
+      { name: "customer@confifoots.com", link: "mailto:customer@confi.com" },
       { name: "+92554862354", link: "tel:+1234567890" },
     ],
   },

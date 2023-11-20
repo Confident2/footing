@@ -10,3 +10,8 @@ const nextConfig = {
 module.exports = nextTranslate({
   ...nextConfig,
 });
+const conf = nextTranslate(nextConfig);
+
+conf.i18n = undefined;
+
+module.exports = conf;

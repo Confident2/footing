@@ -1,21 +1,22 @@
+"use client";
 import { useState } from "react";
 
-import { shoes, statistics } from "../constants";
-import Button from "../components/button";
-import ShoeCard from "../components/shoecard";
-import bigShoe1 from "../../public/big-shoe1.png";
-import { arrowRight } from "../../public";
+import { shoes, statistics } from "../../constants";
+import Button from "../[lang]/components/button";
+import ShoeCard from "../[lang]/components/shoe-card";
+import bigShoe1 from "/public/big-shoe1.png";
+import { arrowRight } from "../../../public";
 import Image from "next/image";
 import useTranslation from "next-translate/useTranslation";
 
 const Hero = () => {
   const [bigShoeImg, setBigShoeImg] = useState(bigShoe1);
-  const { t } = useTranslation("common");
+  const { t } = useTranslation("home");
 
   return (
     <section
       id="home"
-      className="w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 max-container xl:padding-l wide:padding-r padding-b"
+      className="w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 max-container"
     >
       <div className="relative xl:w-2/5 flex flex-col justify-center items-start w-full  max-xl:padding-x pt-28">
         <p className="text-xl font-montserrat text-coral-red">
@@ -24,20 +25,20 @@ const Hero = () => {
 
         <h1 className="mt-10 font-palanquin text-8xl max-sm:text-[72px] max-sm:leading-[82px] font-bold">
           <span className=" xl:whitespace-nowrap relative z-10 pr-10">
-            The New Arrival
+            {t("theNewArrival")}
           </span>
           <br />
           <span className="text-coral-red inline-block mt-3 mr-10">
             Confident
           </span>
-          Shoes
+          <br />
+          {t("shoes")}
         </h1>
         <p className="font-montserrat text-slate-gray text-lg leading-8 mt-6 mb-14 sm:max-w-sm">
-          Discover stylish Nike arrivals, quality comfort, and innovation for
-          your active life.
+          {t("discoverParagraph")}
         </p>
 
-        <Button label="Shop now" iconURL={arrowRight} />
+        <Button label={t("shopNow")} iconURL={arrowRight} />
 
         <div className="flex justify-start items-start flex-wrap w-full mt-20 gap-16">
           {statistics.map((stat, index) => (
