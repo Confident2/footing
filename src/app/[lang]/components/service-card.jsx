@@ -16,5 +16,3 @@ export const ServiceCard = ({ imgURL, label, subtext }) => {
     </div>
   );
 };
-
-export default ServiceCard;

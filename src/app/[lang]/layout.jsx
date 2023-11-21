@@ -2,14 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Nav from "./components/navbar";
 import Footer from "./components/footer";
-// import useTranslation from "next-translate/useTranslation";
-
 import createTranslation from "next-translate/createTranslation";
-// import i18n from "../../../i18n";
-// import { notFound } from "next/navigation";
-// import { useLocale } from "next-intl";
-// import { useTranslations } from "next-intl";
-// import { getTranslations } from "next-intl/server";
 const inter = Inter({ subsets: ["latin"] });
 import { redirect } from "next/navigation";
 import { use } from "react";

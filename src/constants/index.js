@@ -127,6 +127,13 @@ export const reviews = [
     feedback:
       "The product not only met but exceeded my expectations. I'll definitely be a returning customer!",
   },
+  {
+    imgURL: customer1,
+    customerName: "Aristotle",
+    rating: 4.5,
+    feedback:
+      "The attention to detail and the quality of the product exceeded my expectations. Highly recommended!",
+  },
 ];
 
 export const footerLinks = [

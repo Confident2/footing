@@ -13,7 +13,7 @@ const Nav = () => {
         <Link href="/" legacyBehavior>
           <h1 className="text-2xl font-semibold">{t("title")}</h1>
         </Link>
-        {/* <ul className="flex-1 flex justify-center items-center gap-16 max-lg:hidden">
+        <ul className="flex-1 flex justify-center items-center gap-16 max-lg:hidden">
           {navLinks.map((item) => (
             <li key={item.label}>
               <Link
@@ -24,7 +24,7 @@ const Nav = () => {
               </Link>
             </li>
           ))}
-        </ul> */}
+        </ul>
         <div className="flex gap-2 text-lg leading-normal font-medium font-montserrat max-lg:hidden wide:mr-24">
           <Link href="/">{t("signIn")}</Link>
           <span>/</span>
