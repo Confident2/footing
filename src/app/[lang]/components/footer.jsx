@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="max-container  bg-black padding-x padding-t pb-8 text-white">
+    <footer className="max-container:w-full  bg-black padding-x padding-t pb-8 text-white">
       <div className="flex justify-between items-start gap-20 flex-wrap max-lg:flex-col">
         <div className="flex flex-col items-start">
           <Link href="/" legacyBehavior>

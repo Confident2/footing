@@ -91,6 +91,26 @@ export const products = [
     name: "Nike Air Jordan-001",
     price: "$230.20",
   },
+  {
+    imgURL: shoe4,
+    name: "21950 TIMBER CRO BROWN ",
+    price: "$200.20",
+  },
+  {
+    imgURL: shoe5,
+    name: "Nike Air Jordan-10",
+    price: "$210.20",
+  },
+  {
+    imgURL: shoe6,
+    name: "21950 TIMBER CRO BROWN ",
+    price: "$220.20",
+  },
+  {
+    imgURL: shoe7,
+    name: "Nike Air Jordan-001",
+    price: "$230.20",
+  },
 ];
 
 export const services = [
@@ -139,6 +159,28 @@ export const reviews = [
 export const footerLinks = [
   {
     title: "Products",
+    links: [
+      { name: "Air Force 1", link: "/" },
+      { name: "Air Max 1", link: "/" },
+      { name: "Air Jordan 1", link: "/" },
+      { name: "Air Force 2", link: "/" },
+      { name: "Nike Waffle Racer", link: "/" },
+      { name: "Nike Cortez", link: "/" },
+    ],
+  },
+  {
+    title: "Styled Products",
+    links: [
+      { name: "Air Force 1", link: "/" },
+      { name: "Air Max 1", link: "/" },
+      { name: "Air Jordan 1", link: "/" },
+      { name: "Air Force 2", link: "/" },
+      { name: "Nike Waffle Racer", link: "/" },
+      { name: "Nike Cortez", link: "/" },
+    ],
+  },
+  {
+    title: "Other Products",
     links: [
       { name: "Air Force 1", link: "/" },
       { name: "Air Max 1", link: "/" },

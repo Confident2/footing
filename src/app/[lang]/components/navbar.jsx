@@ -8,7 +8,7 @@ import useTranslation from "next-translate/useTranslation";
 const Nav = () => {
   const { t } = useTranslation("common");
   return (
-    <header className="padding-x py-8 absolute z-10 w-full">
+    <header className="padding-x py-8  z-10 w-full">
       <nav className="flex justify-between items-center max-container">
         <Link href="/" legacyBehavior>
           <h1 className="text-2xl font-semibold">{t("title")}</h1>
@@ -26,7 +26,7 @@ const Nav = () => {
           ))}
         </ul>
         <div className="flex gap-2 text-lg leading-normal font-medium font-montserrat max-lg:hidden wide:mr-24">
-          <Link href="/">{t("signIn")}</Link>
+          <Link href="/login">{t("signIn")}</Link>
           <span>/</span>
           <Link href="/">{t("explore")}</Link>
         </div>

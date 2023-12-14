@@ -3,7 +3,13 @@ const nextTranslate = require("next-translate-plugin");
 
 const nextConfig = {
   images: {
-    domains: ["images.pexels.com", "plus.unsplash.com", "images.unsplash.com"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "images.pexels.com",
+        pathname: "*",
+      },
+    ],
   },
 };
 
