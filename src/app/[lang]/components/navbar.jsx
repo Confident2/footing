@@ -4,6 +4,7 @@ import Image from "next/image";
 import { navLinks } from "../../../constants";
 import Link from "next/link";
 import useTranslation from "next-translate/useTranslation";
+import HeaderLocaleSelection from "./locale-drop-drown";
 
 const Nav = () => {
   const { t } = useTranslation("common");
@@ -20,15 +21,20 @@ const Nav = () => {
                 href={item.href}
                 className="font-montserrat leading-normal text-lg text-slate-gray"
               >
-                {item.label}
+                {t(`navLinks.${item.label}`)}
               </Link>
             </li>
           ))}
         </ul>
-        <div className="flex gap-2 text-lg leading-normal font-medium font-montserrat max-lg:hidden wide:mr-24">
-          <Link href="/login">{t("signIn")}</Link>
-          <span>/</span>
-          <Link href="/">{t("explore")}</Link>
+        <div className="flex max-lg:gap-2 sm:gap-1 text-lg items-center leading-normal font-medium font-montserrat  wide:mr-24">
+          <div className="z-50">
+            <HeaderLocaleSelection />
+          </div>
+          <div className="max-lg:hidden">
+            <Link href="/login">{t("signIn")}</Link>
+            <span> / </span>
+            <Link href="/">{t("explore")}</Link>
+          </div>
         </div>
         <div className="hidden max-lg:block">
           <Image

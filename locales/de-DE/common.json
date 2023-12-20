@@ -1,4 +1,13 @@
 {
+  "en-GB": "Englisch",
+  "nl-NL": "Niederländisch",
+  "de-DE": "Deutsch",
+  "navLinks": {
+    "Home": "Startseite",
+    "About Us": "Über uns",
+    "Products": "Produkte",
+    "Contact Us": "Kontaktiere uns"
+  },
   "title": "Confident_Feet",
   "signIn": "Anmelden",
   "explore": "Erkunden"

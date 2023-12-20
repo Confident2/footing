@@ -1,8 +1,7 @@
-"use client";
-
-import useTranslation from "next-translate/useTranslation";
-
 export default function Loading() {
-  const { t } = useTranslation("common");
-  return <p>{t`loading`}</p>;
+  return (
+    <div className="fixed left-0 top-0 z-50 flex h-full w-full items-center justify-center">
+      <div className="h-32 w-32 animate-spin rounded-full border-b-2 border-t-2 border-wood-1"></div>
+    </div>
+  );
 }

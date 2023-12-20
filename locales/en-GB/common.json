@@ -1,4 +1,14 @@
 {
+  "nl-NL": "Netherlands",
+  "en-GB": "English",
+  "de-DE": "German",
+
+  "navLinks": {
+    "Home": "Home",
+    "About Us": "About Us",
+    "Products": "Products",
+    "Contact Us": "Contact Us"
+  },
   "title": "Confident__Feet",
   "signIn": "Sign in",
   "explore": "Explore"
